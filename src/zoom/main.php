@@ -32,7 +32,7 @@ class Main extends PluginBase implements Listener {
 	}
 	
 	public function onJoin(PlayerJoinEvent $event)
-    $player = $event->getPlayer();
+		$player = $event->getPlayer();
      Effect::getEffect(Effect::ABSORPTION)->setDuration(2400)
     }
 }
