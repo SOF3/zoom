@@ -22,13 +22,14 @@ class Main extends PluginBase implements Listener {
 	
 	public function onEnable() {
 		@mkdir($this->getDataFolder());
-		$this->config = new Config($this->getDataFolder() . "config.yml", Config::YAML, array("effect" => 10, "time" => 30));
+		$this->config = new Config($this->getDataFolder() . "config.yml", Config::YAML, array("effect" => 10, "time" => 30, "time" => 30));
 		$this->getServer()->getPluginManager()->registerEvents($this, $this);
 	}
 	
 	public function onJoin(PlayerJoinEvent $event) {
-		$this->EffectPlayer($this->config->get("player")->($this->config->get("effect"));
-		$this->setPlayerEffectLength($this->config->get("time"));
+		$this->EffectPlayer($this->config->get("player"));
+		$this->EffectPlayer($this->config->get("effect"));
+		$this->EffectPlayer($this->config->get("time"));
 	}
 	
 	
