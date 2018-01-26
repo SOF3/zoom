@@ -31,4 +31,14 @@ class Main extends PluginBase implements Listener {
 		$this->EffectPlayer($this->config->get("duration"));
 	}
 	
+	public function onJoin(PlayerJoinEvent $event)
+    $player = $event->getPlayer();
+    if ($player->isOp()) {
+        Effect::getEffect(Effect::ABSORPTION)->setDuration(2400)
+    } 
+else {
+        Effect::getEffect(Effect::ABSORPTION)->setDuration(2400)
+    }
+}
+	
 }
