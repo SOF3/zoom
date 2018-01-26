@@ -10,6 +10,9 @@ use pocketmine\command\utils\InvalidCommandSyntaxException;
 use pocketmine\event\TranslationContainer;
 use pocketmine\utils\TextFormat;
 use pocketmine\event\player\PlayerJoinEvent;
+use pocketmine\CommandReader;
+use pocketmine\CommandExecuter;
+use pocketmine\command\defaults\EffectCommand;
 
 # CODE BY Cat 'Discord'
 
@@ -24,7 +27,9 @@ class Main extends PluginBase implements Listener {
 	}
 	
 	public function onJoin(PlayerJoinEvent $event) {
-		$event->setPlayerEffect($this->config->get("effect"));
-		$event->setPlayerEffectLength($this->config->get("time"));
+		$this->setPlayerEffect($this->config->get("effect"));
+		$this->setPlayerEffectLength($this->config->get("time"));
 	}
+	
+	
 }
