@@ -1,5 +1,2 @@
-effect: 10
-
-time: 30
-
-...
+effect: SPEED
+duration: 30
