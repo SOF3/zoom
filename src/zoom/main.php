@@ -22,7 +22,7 @@ class Main extends PluginBase implements Listener {
 	
 	public function onEnable() {
 		@mkdir($this->getDataFolder());
-		$this->config = new Config($this->getDataFolder() . "config.yml", Config::YAML, array("effect" => 8, "duration" => 10));
+		$this->config = new Config($this->getDataFolder() . "config.yml", Config::YAML, array("effect" => 2, "duration" => 10));
 		$this->getServer()->getPluginManager()->registerEvents($this, $this);
 	}
 	
