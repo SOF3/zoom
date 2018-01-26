@@ -6,6 +6,9 @@ use pocketmine\Player;
 use pocketmine\entity\Effect;
 use pocketmine\utils\Config;
 use pocketmine\event\Listener;
+use pocketmine\command\utils\InvalidCommandSyntaxException;
+use pocketmine\event\TranslationContainer;
+use pocketmine\utils\TextFormat;
 
 # CODE BY Cat
 
