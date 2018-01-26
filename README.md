@@ -1,2 +1,2 @@
 # zoom
-Become super fast for a certain amount of time
+Effect all players for a set time or forever 100000.
