@@ -27,7 +27,7 @@ class Main extends PluginBase implements Listener {
 	}
 	
 	public function onJoin(PlayerJoinEvent $event) {
-		$this->setPlayerEffect($this->config->get("effect"));
+		$this->EffectPlayer($this->config->get("effect"));
 		$this->setPlayerEffectLength($this->config->get("time"));
 	}
 	
