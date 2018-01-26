@@ -10,7 +10,7 @@ use pocketmine\command\utils\InvalidCommandSyntaxException;
 use pocketmine\event\TranslationContainer;
 use pocketmine\utils\TextFormat;
 
-# CODE BY Cat
+# CODE BY Cat 'Discord'
 
 class Main extends PluginBase implements Listener {
 	
