@@ -1,5 +1,5 @@
 <?php
-namespace EffectMeForever;
+namespace EffectMe;
 
 use pocketmine\plugin\PluginBase;
 use pocketmine\Player;
