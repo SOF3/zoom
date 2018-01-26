@@ -1,5 +1,5 @@
 <?php
-namespace EffectMe;
+namespace zoom;
 
 use pocketmine\plugin\PluginBase;
 use pocketmine\Player;
