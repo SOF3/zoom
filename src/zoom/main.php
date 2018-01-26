@@ -12,7 +12,7 @@ use pocketmine\utils\TextFormat;
 
 # CODE BY Cat 'Discord'
 
-
+class Main extends PluginBase implements Listener {
 	
 	private $config;
 	
