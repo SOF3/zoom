@@ -10,7 +10,7 @@ use pocketmine\command\utils\InvalidCommandSyntaxException;
 use pocketmine\event\TranslationContainer;
 use pocketmine\utils\TextFormat;
 use pocketmine\event\player\PlayerJoinEvent;
-use pocketmine\event\player\PlayerDeathEvent
+use pocketmine\event\player\PlayerDeathEvent;
 use pocketmine\CommandReader;
 use pocketmine\CommandExecuter;
 use pocketmine\command\defaults\EffectCommand;
