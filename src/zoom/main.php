@@ -30,7 +30,6 @@ class Main extends PluginBase implements Listener {
 		$effect = Effect::getEffect($this->config->get("effect"));
 		$player = $event->getPlayer();
 		$effect->setDuration($this->config->get("duration"));
-		$player = getServer()->getPlayer($args[0]);
 		$player->addEffect($effect);
 		
 	}
