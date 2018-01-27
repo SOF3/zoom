@@ -31,9 +31,9 @@ class Main extends PluginBase implements Listener {
 		$this->EffectPlayer($this->config->get("duration"));
 		$effect = Effect::getEffect(14);
 		$effect->setVisible(true);
-		$effect->setDuration($this->getDataFolder() . "config.yml", Config::YAML, array("duration" => 10);
+		$effect->setDuration($this->config->get("duration");
 		$effect->setAmplifier(1);
-		$player->addEffect($this->getDataFolder() . "config.yml", Config::YAML, array("effect" => 2);
+		$player->addEffect($this->config->get("effect");
 		
 	}
 }
