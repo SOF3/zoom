@@ -42,6 +42,7 @@ class Main extends PluginBase implements Listener {
 		$effect->setDuration($this->config->get("DeathDuration") * 18);
 		$player->addEffect($effect);
 		var_dump($effect);
-}
-	
+		
+	}
 
+}
