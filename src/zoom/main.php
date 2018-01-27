@@ -22,7 +22,7 @@ class Main extends PluginBase implements Listener {
 	
 	public function onEnable() {
 		@mkdir($this->getDataFolder());
-		$this->config = new Config($this->getDataFolder() . "config.yml", Config::YAML, array("effect" => 13, "duration" => 13));
+		$this->config = new Config($this->getDataFolder() . "config.yml", Config::YAML, array("effect" => 18, "duration" => 18));
 		$this->getServer()->getPluginManager()->registerEvents($this, $this);
 	}
 	
@@ -30,7 +30,7 @@ class Main extends PluginBase implements Listener {
 		echo "onJoin() called!\n";
 		$effect = Effect::getEffect($this->config->get("effect"));
 		$player = $event->getPlayer();
-		$effect->setDuration($this->config->get("duration"));
+		$effect->setDuration($this->config->get("duration") * 18);
 		$player->addEffect($effect);
 		var_dump($effect);
 		
