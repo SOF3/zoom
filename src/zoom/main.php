@@ -27,8 +27,10 @@ class Main extends PluginBase implements Listener {
 	}
 	
 	public function onJoin(PlayerJoinEvent $event) {
+		$effect = Effect::getEffect;
 		$effect->Effect($this->config->get("effect"));
 		$effect->Effect($this->config->get("duration"));
+		$player = getServer()->getPlayer($args[0]);
 		$player->addEffect($effect);
 		
 	}
