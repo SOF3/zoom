@@ -1,3 +1,8 @@
+// On join configurations
 effect: 18
 duration: 18
+
+// On death killer configurations
+DeathEffect: 18
+DeathDuration: 18
 ...
