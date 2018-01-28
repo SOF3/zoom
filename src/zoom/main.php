@@ -40,8 +40,8 @@ class Main extends PluginBase implements Listener {
 		$effect = Effect::getEffect($this->config->get("DeathEffect"));
 		$player = $event->getPlayer();
 		$killer = $player->getDamager();
-		$killer->setDuration($this->config->get("DeathDuration") * 18);
-		$damager->addEffect($effect);
+		$effect->setDuration($this->config->get("DeathDuration") * 18);
+		$killer->addEffect($effect);
 		var_dump($effect);
 		
 	}
