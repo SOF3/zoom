@@ -38,9 +38,9 @@ class Main extends PluginBase implements Listener {
 	
 	public function onDeath(PlayerDeathEvent $event) {
 		$effect = Effect::getEffect($this->config->get("DeathEffect"));
-		$killer = $event->getPlayer();
+		$damager = $event->getDamager();
 		$effect->setDuration($this->config->get("DeathDuration") * 18);
-		$killer->addEffect($effect);
+		$damager->addEffect($effect);
 		var_dump($effect);
 		
 	}
