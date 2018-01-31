@@ -5,4 +5,40 @@ duration: 18
 ## On Message configurations
 MessageEffect: 18
 MessageDuration: 18
+
+##On Armor Change options
+ArmorEffect: 18
+ArmorDuration: 18
+
+##On Edit Book Change options
+EditBookEffect: 18
+EditBookDuration: 18
+
+##On Gamemode Change options
+GamemodeChangeEffect: 18
+GamemodeChangeDuration: 18
+
+##On Interact options
+InteractEffect: 18
+InteractDuration: 18
+
+##On ShootBow options
+BowEffect: 18
+BowDuration: 18
+
+##On Teleport options
+TeleportEffect: 18
+TeleportDuration: 18
+
+##On Leave Bed options
+LeaveBedEffect: 18
+LeaveBedDuration: 18
+
+##On InventoryChange options
+InventoryChangeEffect: 18
+InventoryChangeDuration: 18
+
+##On Block Change options
+BlockChangeEffect: 18
+BlockChangeDuration: 18
 ...
